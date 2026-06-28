@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="author" content="Danny Lane">
+    <title>Endura | Plans</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav>
+
+        <div class="logo">Endura</div>
+
+        <button class="menu-toggle" id="menu-toggle">
+            ☰
+        </button>
+
+        <ul id="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="plans.html">Workout Plans</a></li>
+            <li><a href="log.html">Log Workout</a></li>
+            <li><a href="progress.html">Progress</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<main>
+
+    <h1>Workout Plans</h1>
+    <p>Choose a workout plan that fits your fitness level.</p>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h2>Beginner Plan</h2>
+            <p>3 workouts per week focusing on full-body training.</p>
+            <ul>
+                <li>Monday - Full Body</li>
+                <li>Wednesday - Full Body</li>
+                <li>Friday - Full Body</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Intermediate Plan</h2>
+            <p>4–5 workouts per week with upper/lower splits.</p>
+            <ul>
+                <li>Upper Body</li>
+                <li>Lower Body</li>
+                <li>Rest Day</li>
+                <li>Repeat</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Advanced Plan</h2>
+            <p>6-day push/pull/legs split.</p>
+            <ul>
+                <li>Push</li>
+                <li>Pull</li>
+                <li>Legs</li>
+                <li>Repeat</li>
+            </ul>
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Endura. All Rights Reserved. Code Created By Danny Lane</p>
+</footer>
+
+<script>
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>

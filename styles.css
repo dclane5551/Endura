@@ -1,0 +1,385 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #f5f5f5;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    background: linear-gradient(
+    to bottom,
+    #2d3748,
+    #4a5568,
+    #2d3748
+);
+
+    background-attachment: fixed;
+}
+
+main {
+    flex: 1;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.75rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #d6d6d6;
+}
+
+/* HEADER & NAVIGATION */
+
+header {
+    background: rgba(30, 30, 30, 0.8);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); 
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2.4rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+#nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#nav-links a:hover {
+    color: #60a5fa;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* HERO SECTION */
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    max-width: 650px;
+    margin: 0 auto 2rem;
+}
+
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    background-color: #3b82f6;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: 0.3s;
+    margin: 0.5rem;
+}
+
+.btn:hover {
+    background-color: #2563eb;
+}
+
+/* DASHBOARD SECTIONS */
+
+.stats,
+.recent-workouts,
+.quick-actions {
+    margin-bottom: 3rem;
+}
+
+/* CARD LAYOUT */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    background-color: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #2d2d2d;
+    flex: 1;
+    min-width: 250px;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #60a5fa;
+}
+
+.card h3 {
+    font-size: 1.15rem;
+}
+/* FORMS */
+
+form {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-container form {
+    width: 100%;
+}
+
+form button {
+    display: block;
+    margin: 2rem auto 0;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: .95rem;
+    font-weight: 600;
+}
+
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    color: white;
+    border: 1px solid #2d2d2d;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3b82f6;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+/* WORKOUT HISTORY */
+
+.history-item {
+    background-color: #1e1e1e;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #2d2d2d;
+}
+
+/*PROGRESS CHART PLACEHOLDER*/
+
+.chart-placeholder {
+    height: 300px;
+    background-color: #1e1e1e;
+    border: 2px dashed #3b82f6;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+/* FOOTER*/
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1e1e1e;
+    border-top: 1px solid #2d2d2d;
+    margin-top: 4rem;
+    background: rgba(30, 30, 30, 0.8);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+    footer p {
+    font-size: .9rem;
+    color: #bcbcbc;
+}
+
+
+/*MOBILE RESPONSIVE*/
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .logo {
+        margin-bottom: .5rem;
+    }
+
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        text-align: center;
+        background-color: #1e1e1e;
+    }
+
+    #nav-links.active {
+        display: flex;
+    }
+
+    #nav-links li {
+        width: 100%;
+    }
+
+    #nav-links a {
+        display: block;
+        padding: 1rem;
+        border-bottom: 1px solid #333;
+    }
+
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
