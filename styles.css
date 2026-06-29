@@ -47,6 +47,12 @@ table {
 	border-spacing: 0;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -69,11 +75,13 @@ body {
 
 main {
     flex: 1;
-    max-width: 1200px;
     width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1.5rem;
+    overflow-x: hidden;
 }
+
 
 h1 {
     font-size: 2.75rem;
@@ -106,6 +114,8 @@ header {
     background: rgba(30, 30, 30, 0.8);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px); 
+    padding: 1rem 0;
+
 }
 
 nav {
@@ -189,7 +199,7 @@ nav {
 .stats,
 .recent-workouts,
 .quick-actions {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 /* CARD LAYOUT */
