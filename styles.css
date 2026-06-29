@@ -82,30 +82,35 @@ main {
     overflow-x: hidden;
 }
 
+.home-main {
+    max-width: 1500px;
+}
+
 
 h1 {
     font-size: 2.75rem;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
 }
 
 h2 {
     font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 1.25rem;
+    margin-bottom: .75rem;
 }
 
 h3 {
     font-size: 1.25rem;
     font-weight: 600;
-    margin-bottom: .5rem;
+    margin-bottom: .35rem;
 }
 
 p {
     font-size: 1rem;
     font-weight: 400;
     color: #d6d6d6;
+    margin-bottom: .75rem;
 }
 
 /* HEADER & NAVIGATION */
@@ -215,8 +220,8 @@ nav {
     padding: 1.5rem;
     border-radius: 12px;
     border: 1px solid #2d2d2d;
-    flex: 1;
-    min-width: 250px;
+    flex: 1 1 320px;
+    min-width: 320px;
 }
 
 .stat-number {
@@ -228,6 +233,44 @@ nav {
 .card h3 {
     font-size: 1.15rem;
 }
+
+.exercise-card{
+    background:#1e1e1e;
+    border-radius:12px;
+    padding:1.5rem;
+    margin:1.5rem 0;
+    border:1px solid #2d2d2d;
+}
+
+.exercise-row {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.exercise-row > div {
+    flex: 1;
+    min-width: 0;
+}
+
+.removeExercise{
+
+    margin-top:1rem;
+    background:#dc2626;
+
+}
+
+.removeExercise:hover{
+
+    background:#b91c1c;
+
+}
+
+#addExercise{
+
+    margin:1rem 0;
+}
+
 /* FORMS */
 
 form {
@@ -253,6 +296,18 @@ form {
 form button {
     display: block;
     margin: 2rem auto 0;
+}
+
+.form-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.form-actions .btn {
+    margin: 0;
 }
 
 label {
@@ -392,4 +447,11 @@ footer {
     main {
         padding: 1rem;
     }
+
+    .exercise-row{
+
+    flex-direction:column;
+
+}
+
 }
