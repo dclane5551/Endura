@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta name="author" content="Danny Lane">
-    <title>Endura | Progress</title>
+    <title>Endura | Home</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,40 +34,69 @@
     </nav>
 </header>
 
+<main class="home-main">
 
-<main>
+    <section class="hero">
+        <h1>Welcome Back</h1>
+        <p>Track workouts, monitor progress, and stay consistent with your fitness goals.</p>
+        <a href="log.html" class="btn">Log Workout</a>
+    </section>
 
-    <h1>Progress</h1>
+    <section class="stats">
+        <h2>Your Stats</h2>
 
-    <canvas id="progressChart"></canvas>
-    <div id="workout-history"></div>
+        <div class="card-container">
 
-    <div class="card-container">
+            <div class="card">
+                <h3>Workouts This Week</h3>
+                <p class="stat-number">4</p>
+            </div>
+
+            <div class="card">
+                <h3>Current Streak</h3>
+                <p class="stat-number">5 Days</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Workouts</h3>
+                <p class="stat-number">27</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="recent-workouts">
+        <h2>Recent Workouts</h2>
 
         <div class="card">
-            <h3>Bench Press PR</h3>
-            <p class="stat-number">185 lbs</p>
+            <h3>Chest Day</h3>
+            <p>May 1, 2026</p>
         </div>
 
         <div class="card">
-            <h3>Squat PR</h3>
-            <p class="stat-number">225 lbs</p>
+            <h3>Leg Day</h3>
+            <p>April 29, 2026</p>
         </div>
 
         <div class="card">
-            <h3>Workout Streak</h3>
-            <p class="stat-number">14 Days</p>
+            <h3>Back Day</h3>
+            <p>April 27, 2026</p>
         </div>
 
-    </div>
+    </section>
+
+    <section class="quick-actions">
+        <h2>Quick Actions</h2>
+
+        <a href="log.html" class="btn">Log New Workout</a>
+        <a href="progress.html" class="btn">View Progress</a>
+    </section>
 
 </main>
 
 <footer>
     <p>&copy; 2026 Endura. All Rights Reserved. Code Created By Danny Lane</p>
 </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
 const menuToggle = document.getElementById("menu-toggle");
@@ -77,8 +106,6 @@ menuToggle.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
 </script>
-
-<script src="chartscript.js"></script>
 
 </body>
 </html>

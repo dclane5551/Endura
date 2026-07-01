@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="author" content="Danny Lane">
-    <title>Endura | Home</title>
+    <meta name="author" content="Danny Lane">
+    <title>Endura | Workout Tracking</title>
+
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <header>
+
     <nav>
 
         <div class="logo">Endura</div>
@@ -22,87 +25,196 @@
         </button>
 
         <ul id="nav-links">
-            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
             <li><a href="plans.html">Workout Plans</a></li>
             <li><a href="log.html">Log Workout</a></li>
             <li><a href="progress.html">Progress</a></li>
             <li><a href="about.html">About</a></li>
         </ul>
-
     </nav>
+
 </header>
 
-<main class="home-main">
 
-    <section class="hero">
-        <h1>Welcome Back</h1>
-        <p>Track workouts, monitor progress, and stay consistent with your fitness goals.</p>
-        <a href="log.html" class="btn">Log Workout</a>
+<main>
+
+
+    <section class="landing-hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Build Better Habits.<br>
+                Train Smarter.
+            </h1>
+
+            <p>
+
+                Endura helps you organize workouts,
+                monitor progress, and stay consistent
+                with your fitness journey.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="dashboard.html" class="btn">
+                    Open Dashboard
+                </a>
+
+                <a href="plans.html" class="btn secondary-btn">
+                    Explore Plans
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <div class="dashboard-preview">
+
+                <h3>Weekly Progress</h3>
+
+                <div class="fake-chart"></div>
+
+                <div class="preview-stats">
+
+                    <div class="mini-card">
+
+                        <h4>Workouts</h4>
+                        <span>0</span>
+
+                    </div>
+
+                    <div class="mini-card">
+
+                        <h4>Current Streak</h4>
+                        <span>0 Days</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </section>
 
-    <section class="stats">
-        <h2>Your Stats</h2>
+    <section class="landing-features">
+
+        <h2>Everything You Need</h2>
 
         <div class="card-container">
 
             <div class="card">
-                <h3>Workouts This Week</h3>
-                <p class="stat-number">4</p>
+
+                <h3>Workout Tracking</h3>
+
+                <p>
+                    Record complete workouts including
+                    exercises, sets, reps and weight.
+                </p>
+
             </div>
 
             <div class="card">
-                <h3>Current Streak</h3>
-                <p class="stat-number">5 Days</p>
+
+                <h3>Progress Analytics</h3>
+
+                <p>
+                    Visualize consistency with interactive
+                    charts and workout history.
+                </p>
+
             </div>
 
             <div class="card">
-                <h3>Total Workouts</h3>
-                <p class="stat-number">27</p>
+
+                <h3>Workout Plans</h3>
+
+                <p>
+                    Browse beginner, intermediate and
+                    advanced routines.
+                </p>
+
             </div>
 
         </div>
-    </section>
-
-    <section class="recent-workouts">
-        <h2>Recent Workouts</h2>
-
-        <div class="card">
-            <h3>Chest Day</h3>
-            <p>May 1, 2026</p>
-        </div>
-
-        <div class="card">
-            <h3>Leg Day</h3>
-            <p>April 29, 2026</p>
-        </div>
-
-        <div class="card">
-            <h3>Back Day</h3>
-            <p>April 27, 2026</p>
-        </div>
 
     </section>
 
-    <section class="quick-actions">
-        <h2>Quick Actions</h2>
 
-        <a href="log.html" class="btn">Log New Workout</a>
-        <a href="progress.html" class="btn">View Progress</a>
+    <section class="showcase">
+
+        <div>
+
+            <h2>Designed for Consistency</h2>
+
+            <p>
+
+                Stay organized with a clean dashboard,
+                reusable workouts, and progress tracking
+                built to keep you motivated.
+
+            </p>
+
+            <a href="dashboard.html" class="btn">
+                Get Started
+            </a>
+
+        </div>
+
+        <div class="showcase-image">
+
+            Dashboard Preview
+
+        </div>
+
+    </section>
+
+
+    <section class="landing-cta">
+
+        <h2>Ready to Start?</h2>
+
+        <p>
+
+            Build stronger habits with Endura today.
+
+        </p>
+
+        <a href="dashboard.html" class="btn">
+            Launch Dashboard
+        </a>
+
     </section>
 
 </main>
 
 <footer>
-    <p>&copy; 2026 Endura. All Rights Reserved. Code Created By Danny Lane</p>
+
+    <p>
+
+        © 2026 Endura. All Rights Reserved.
+
+    </p>
+
 </footer>
 
 <script>
+
 const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.getElementById("nav-links");
 
 menuToggle.addEventListener("click", () => {
+
     navLinks.classList.toggle("active");
+
 });
+
 </script>
 
 </body>
