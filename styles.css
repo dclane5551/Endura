@@ -581,4 +581,26 @@ footer {
 
 }
 
+@media(max-width:900px){
+
+    .landing-hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-content h1{
+        text-align:center;
+        font-size:3rem;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .showcase{
+        grid-template-columns:1fr;
+    }
+
+}
+
 }
